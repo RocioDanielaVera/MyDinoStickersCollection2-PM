@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_home_activity"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/bkg_userphoto"
+        android:layout_width="150dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/img_user_default" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/rowdies_regular"
+        android:gravity="center"
+        android:text="@string/usuario"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bkg_userphoto" />
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/afacad_bold"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/usuario"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bkg_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/rowdies_regular"
+        android:text="@string/categorias1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_collection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bkg_date"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_collection"
+        android:layout_width="315dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bkg_button_mycollection"
+        app:layout_constraintBottom_toTopOf="@+id/btn_purchase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_purchase"
+        android:layout_width="315dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bkg_button_buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_collection"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <ImageView
+        android:id="@+id/iv_bkg_date"
+        android:layout_width="327dp"
+        android:layout_height="52dp"
+        android:background="@drawable/tab_date_id_bkg"
+        app:layout_constraintBottom_toTopOf="@+id/tv_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fullname" />
+
+    <TextView
+        android:id="@+id/tv_userid"
+        android:layout_width="84dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/afacad_bold"
+        android:gravity="start"
+        android:text="@string/id"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bkg_date"
+        app:layout_constraintEnd_toStartOf="@+id/tv_userdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_bkg_date"
+        app:layout_constraintStart_toStartOf="@+id/iv_bkg_date"
+        app:layout_constraintTop_toTopOf="@+id/iv_bkg_date" />
+
+    <TextView
+        android:id="@+id/tv_userdate"
+        android:layout_width="146dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/afacad_bold"
+        android:gravity="end"
+        android:text="@string/dd_mm_yyyy"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bkg_date"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bkg_date"
+        app:layout_constraintStart_toEndOf="@+id/tv_userid"
+        app:layout_constraintTop_toTopOf="@+id/iv_bkg_date"
+        tools:ignore="TextSizeCheck" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

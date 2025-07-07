@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_main_activity"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/apartadoBlanco"
+        android:layout_width="358dp"
+        android:layout_height="372dp"
+        android:contentDescription="image of something"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLogin"
+        app:srcCompat="@drawable/rectangle_bkg"
+        tools:ignore="Hardcodedtext" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="172dp"
+        android:layout_height="102dp"
+        android:fontFamily="@font/rowdies_regular"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/descriptionLogin"
+        android:layout_width="279dp"
+        android:layout_height="86dp"
+        android:fontFamily="@font/afacad_bold"
+        android:text="@string/login_description"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/apartadoBlanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_user_nickname"
+        android:layout_width="293dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="0dp"
+        android:hint="@string/user_input_name"
+        android:padding="20dp"
+        android:background="@drawable/bkg_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/et_password"
+        app:layout_constraintEnd_toEndOf="@+id/apartadoBlanco"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/apartadoBlanco"
+        app:layout_constraintTop_toTopOf="@+id/apartadoBlanco"
+        app:layout_constraintVertical_bias="0.15"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="293dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/constrasenia"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:background="@drawable/bkg_edit_text"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/apartadoBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/apartadoBlanco"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/apartadoBlanco"
+        app:layout_constraintTop_toTopOf="@+id/apartadoBlanco"
+        app:layout_constraintVertical_bias="0.54"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ingresar"
+        android:layout_width="293dp"
+        android:layout_height="65dp"
+        android:background="@drawable/button_bkg"
+        android:text="@string/ingresar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/apartadoBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/apartadoBlanco"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/apartadoBlanco"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apartadoBlanco"
+        app:layout_constraintVertical_bias="0.458"
+        app:srcCompat="@drawable/panini_group_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyDinoStickersCollection2</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="usuario">Usuario</string>
+    <string name="categorias">categorias</string>
+    <string name="id">id</string>
+    <string name="categorias1">Categorias</string>
+    <string name="login">Login</string>
+    <string name="login_description">Ingrese nombre de usuario y contraseña para administrar su album de figuritas.</string>
+    <string name="user_input_name">Nombre de usuario</string>
+    <string name="constrasenia">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+</resources>
