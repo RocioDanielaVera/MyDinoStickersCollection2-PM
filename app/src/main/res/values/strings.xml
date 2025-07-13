@@ -10,4 +10,25 @@
     <string name="user_input_name">Nombre de usuario</string>
     <string name="constrasenia">Contraseña</string>
     <string name="ingresar">INGRESAR</string>
+    <string name="tu_cariito">Tu cariito</string>
+    <string name="elegi_una_cantidad">Elegí una cantidad</string>
+    <string name="eleg_un_medio_de_pago">Elegí un medio de pago</string>
+    <string name="sobre_de_5_figuritas_por_pack">Sobre de 5 figuritas por pack</string>
+    <string name="_1_500_0">$1.500.0</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="items">Items</string>
+    <string name="comprar_ahora">Comprar ahora</string>
+    <string name="oops">¡OOPS!</string>
+    <string name="lo_sentimos_no_se_pudo_realizar_su_compra_por_saldo_insuficiente_ingrese_dinero_a_su_cuenta_e_intente_otra_vez">Lo sentimos, no se pudo realizar su compra por saldo insuficiente. Ingrese dinero a su cuenta e intente otra vez.</string>
+    <string name="volver_a_mi_inicio">Volver a mi inicio</string>
+    <string name="imagen_redondeada_de_una_x_al_mostrar_una_falla">Imagen redondeada de una x al mostrar una falla</string>
+    <string name="pago_exitoso">Pago Exitoso</string>
+    <string name="su_compra_se_realizo_exitosamente_se_acaban_de_agregar_nuevas_figuritas_a_tu_colecci_n_volv_a_la_pantalla_principal_y_descubrilas">Su compra se realizo exitosamente. Se acaban de agregar nuevas figuritas a tu colección ¡Volvé a la pantalla principal y descubrilas!</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="comisi_n">Comisión</string>
+    <string name="total">Total</string>
+    <string name="imagen_seleccionada_medio_de_pago_visa">Imagen seleccionada, medio de pago visa</string>
+    <string name="imagen_seleccionada_medio_de_pago_mercado_pago">Imagen seleccionada, medio de pago mercado pago</string>
+    <string name="imagen_seleccionada_mastercard">Imagen seleccionada, mastercard</string>
+    <string name="sobres_de_stickers">Sobres de stickers</string>
 </resources>
