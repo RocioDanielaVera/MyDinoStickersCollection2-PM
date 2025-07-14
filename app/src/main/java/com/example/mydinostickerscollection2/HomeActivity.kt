@@ -8,11 +8,11 @@ import com.example.mydinostickerscollection2.repositories.UserRepository
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         val nickname = intent.extras?.getString("USER_NICKNAME").orEmpty()
         val password = intent.extras?.getString("USER_PASSWORD").orEmpty()
         val usuario:User? = UserRepository.login(nickname, password)
