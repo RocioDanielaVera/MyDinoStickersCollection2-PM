@@ -30,7 +30,12 @@ class HomeActivity : AppCompatActivity() {
 
     fun purchaseSetUp(){
         binding.btnPurchase.setOnClickListener {
+            val nickname = intent.extras?.getString("USER_NICKNAME").orEmpty()
+            val password = intent.extras?.getString("USER_PASSWORD").orEmpty()
+
             val intentPurchase = Intent(this, PurchaseActivity::class.java)
+            intentPurchase.putExtra("USER_NICKNAME", nickname)
+            intentPurchase.putExtra("USER_PASSWORD", password)
             startActivity(intentPurchase)
         }
     }
