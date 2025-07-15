@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/sticker_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="350dp"
+    android:layout_width="match_parent"
+    app:cardPreventCornerOverlap="true"
+    android:background="@drawable/bkg_item"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bkg_item"
+            android:contentDescription="@string/fondo_del_sticker_en_un_verde_degradado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/bkg_image"-->
+        <!--            android:layout_width="140dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/iv_sticker_image"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            android:background="@drawable/img_2"-->
+        <!--            tools:ignore="ContentDescription" />-->
+
+        <ImageView
+            android:id="@+id/iv_sticker_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="28dp"
+            tools:background="@drawable/img_1"
+            app:layout_constraintBottom_toTopOf="@+id/tv_sticker_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="ContentDescription" />
+
+
+
+        <TextView
+            android:id="@+id/tv_sticker_name"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textColor="#434343"
+            android:letterSpacing="-0.05"
+            android:textSize="20sp"
+            android:fontFamily="@font/afacad_bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_sticker_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_sticker_image"
+            app:layout_constraintVertical_bias="0.5"
+            tools:text="Allosaurus" />
+
+        <TextView
+            android:id="@+id/tv_sticker_description"
+            android:layout_width="140dp"
+            android:layout_height="113dp"
+            android:textSize="12sp"
+            android:textColor="#454545"
+            android:fontFamily="@font/afacad_variablefont_wght"
+            app:layout_constraintBottom_toTopOf="@+id/tv_sticker_extra_data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sticker_name"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="TextSizeCheck"
+            tools:text="Allosaurus es un gran terópodo pico, con un cráneo grande y un cuello corto, una cola larga y miembros superiores reducidos" />
+
+        <TextView
+            android:id="@+id/tv_sticker_extra_data"
+            android:layout_width="141dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#474747"
+            android:background="@drawable/img"
+            android:fontFamily="@font/afacad_variablefont_wght"
+            android:gravity="center"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sticker_description"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="TextSizeCheck"
+            tools:text="9M                   5m                 metros              ventros" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

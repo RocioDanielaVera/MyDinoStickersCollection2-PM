@@ -34,4 +34,6 @@
     <string name="descripcion_user">USER011, ¡Solo te faltan 4 stickers para completar tu colección!\nColeccionadas: 24 \nRepetidas: 6</string>
     <string name="allosaurus_description">Allosaurus es un gran terópodo pico, con un cráneo grande y un cuello corto, una cola larga y miembros superiores reducidos.</string>
     <string name="velociraptor_description">Velociraptor es un carnívoro bípedo, con una cola larga y rígida, y unas garras grandes con forma de hoz en cada pata, que probablemente le facilitaba el matar a sus presas.</string>
+    <string name="fondo_del_sticker_en_un_verde_degradado">Fondo del sticker en un verde degradado</string>
+    <string name="tu_colecci_n">Tu colección</string>
 </resources>
