@@ -42,6 +42,7 @@ class PurchaseActivity : AppCompatActivity() {
                 intentFail.putExtra("USER_PASSWORD", user.password)
                 startActivity(intentFail)
             } else {
+                user.money -= totalAmount
                 val intentSuccess = Intent(this, SuccessActivity::class.java)
                 intentSuccess.putExtra("USER_NICKNAME", user.nickName)
                 intentSuccess.putExtra("USER_PASSWORD", user.password)
@@ -67,6 +68,7 @@ class PurchaseActivity : AppCompatActivity() {
         binding.btnMastercard.setOnClickListener {
             medioDePago = Mastercard()
             totalAmount = medioDePago.calcularMontoFinal(getSubtotal())
+            comision = (medioDePago as Mastercard).comision
             binding.tvUserComision.text = buildString { append("$comision") }
             binding.tvUserTotal.text = buildString { append("$totalAmount") }
         }
@@ -74,6 +76,7 @@ class PurchaseActivity : AppCompatActivity() {
         binding.btnMercadopago.setOnClickListener {
             medioDePago = MercadoPago()
             totalAmount = medioDePago.calcularMontoFinal(getSubtotal())
+            comision = getSubtotal() * (medioDePago as MercadoPago).comision
             binding.tvUserComision.text = buildString { append("$comision") }
             binding.tvUserTotal.text = buildString { append("$totalAmount") }
         }
