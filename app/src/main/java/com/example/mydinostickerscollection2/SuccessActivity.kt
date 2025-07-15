@@ -21,7 +21,7 @@ class SuccessActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//actualizacion
+
         binding.btnVolverInicio.setOnClickListener {
             val nickname = intent.getStringExtra("USER_NICKNAME").orEmpty()
             val password = intent.getStringExtra("USER_PASSWORD").orEmpty()

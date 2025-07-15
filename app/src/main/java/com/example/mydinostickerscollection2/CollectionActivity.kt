@@ -15,6 +15,5 @@ class CollectionActivity : AppCompatActivity() {
         val nickname = intent.extras?.getString("USER_NICKNAME").orEmpty()
         val password = intent.extras?.getString("USER_PASSWORD").orEmpty()
         val usuario: User? = UserRepository.login(nickname, password)
-
     }
 }

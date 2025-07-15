@@ -20,6 +20,7 @@ class PurchaseActivity : AppCompatActivity() {
     private var comision = 0.0
     private var medioDePago: MedioDePago? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPurchaseBinding.inflate(layoutInflater)

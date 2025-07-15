@@ -20,7 +20,6 @@ class HomeActivity : AppCompatActivity() {
         purchaseSetUp()
         collectionSetUp()
     }
-
     fun initUserInformation(usuario: User?){
         binding.tvUsername.text = buildString { append("Hola, ${usuario?.nickName}" ) }
         binding.tvUserid.text = buildString { append(usuario?.id) }

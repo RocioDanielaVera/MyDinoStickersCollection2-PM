@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mydinostickerscollection2.databinding.ActivityFailBinding
 
 class FailActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityFailBinding
+    private lateinit var binding: ActivityFailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
