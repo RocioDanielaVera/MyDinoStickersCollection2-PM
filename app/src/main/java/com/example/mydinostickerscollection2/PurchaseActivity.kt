@@ -19,7 +19,7 @@ class PurchaseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPurchaseBinding
     private var totalAmount = 0.0
     private var comision = 0.0
-    private var medioDePago: MedioDePago? = null
+    //private var medioDePago: MedioDePago? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +32,9 @@ class PurchaseActivity : AppCompatActivity() {
         initListeners()
         initPaymentButtons()
         initPayNowButton(usuario)
+        //Inicializo los valores de el sobre precargado en pantalla
+        binding.tvUserItems.text = "$sobresActual"
+        binding.tvUserSubtotal.text = "${getSubtotal()}"
     }
     private fun initPayNowButton(user: User?) {
         binding.btnBuyNow.setOnClickListener {
@@ -106,7 +109,12 @@ class PurchaseActivity : AppCompatActivity() {
                 binding.tvCountStickerpack.text = buildString { append("$sobresActual") }
                 binding.tvUserItems.text = buildString { append("$sobresActual") }
                 binding.tvUserSubtotal.text = buildString { append("${getSubtotal()}") }
-
+                //Sumo lo sugerido por el profe
+//                val currentTotalAmount = binding.tvUserTotal.text
+//                if (currentTotalAmount.isNotEmpty()) {
+//                    val newTotalAmount = currentTotalAmount.toString().toFloat().plus(getSubtotal())
+//                    binding.tvUserTotal.text = buildString { append("$newTotalAmount") }
+//                }
             }
         }
 
