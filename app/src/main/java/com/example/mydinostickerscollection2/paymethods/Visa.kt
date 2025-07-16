@@ -9,18 +9,6 @@ class Visa : MedioDePago {
     var montoTotal:Double = 0.0
     val zonaArgentina: ZoneId = ZoneId.of("America/Argentina/Buenos_Aires")
 
-//    override fun calcularMontoFinal(montoBase: Double): Double {
-//        if(horaActual in LocalTime.of(15,0,0)..LocalTime.of(22,30,0)){
-//            this.comision = montoBase * 0.1
-//            this.montoTotal = montoBase + this.comision
-//        } else {
-//            this.comision = montoBase * 0.3
-//            this.montoTotal = montoBase + this.comision
-//        }
-//        return this.montoTotal
-//    }
-
-
     val horaArg: LocalTime = LocalTime.now(zonaArgentina)
 
     override fun calcularMontoFinal(montoBase: Double): Double {

@@ -22,8 +22,9 @@ class HomeActivity : AppCompatActivity() {
     }
     fun initUserInformation(usuario: User?){
         binding.tvUsername.text = buildString { append("Hola, ${usuario?.nickName}" ) }
-        binding.tvUserid.text = buildString { append("$${usuario?.money}") }
+        binding.tvUserid.text = buildString { append("${usuario?.id}") }
         binding.tvUserdate.text = buildString { append(usuario?.createdDate) }
+        binding.tvUserMoney.text = buildString { append("Saldo: $ ${usuario?.money}") }
         binding.tvFullname.text = buildString { append("${usuario?.name} ${usuario?.surname}") }
     }
 
