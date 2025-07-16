@@ -10,6 +10,7 @@ import com.example.mydinostickerscollection2.paymethods.Mastercard
 import com.example.mydinostickerscollection2.paymethods.MedioDePago
 import com.example.mydinostickerscollection2.paymethods.MercadoPago
 import com.example.mydinostickerscollection2.paymethods.Visa
+import com.example.mydinostickerscollection2.repositories.StickersRepository
 import com.example.mydinostickerscollection2.repositories.UserRepository
 
 
@@ -43,6 +44,12 @@ class PurchaseActivity : AppCompatActivity() {
                 startActivity(intentFail)
             } else {
                 user.money -= totalAmount
+
+                //creo los nuevos stickers que compro el usuario
+                val nuevosStickers = StickersRepository.getRandomPackOfStickersByTotal(sobresActual)
+                //agrego los nuevos stickers a la coleccion del usuario
+                user.stickerCollection.addAll(nuevosStickers)
+
                 val intentSuccess = Intent(this, SuccessActivity::class.java)
                 intentSuccess.putExtra("USER_NICKNAME", user.nickName)
                 intentSuccess.putExtra("USER_PASSWORD", user.password)

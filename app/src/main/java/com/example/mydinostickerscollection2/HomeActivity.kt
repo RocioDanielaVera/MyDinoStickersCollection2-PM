@@ -41,7 +41,13 @@ class HomeActivity : AppCompatActivity() {
 
     fun collectionSetUp(){
         binding.buttonCollection.setOnClickListener {
+            //le paso los datos del usuario a la pantalla de colección
+            val nickname = intent.extras?.getString("USER_NICKNAME").orEmpty()
+            val password = intent.extras?.getString("USER_PASSWORD").orEmpty()
+
             val intentCollection= Intent(this, CollectionActivity::class.java)
+            intentCollection.putExtra("USER_NICKNAME", nickname)
+            intentCollection.putExtra("USER_PASSWORD", password)
             startActivity(intentCollection)
         }
     }

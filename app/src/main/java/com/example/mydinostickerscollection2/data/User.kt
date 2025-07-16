@@ -6,4 +6,6 @@ data class User(val id: Long,
                 val name: String,
                 val surname: String,
                 var money: Double,
-                val createdDate: String)
+                val createdDate: String,
+                val stickerCollection: MutableList<Long> = mutableListOf()
+)
